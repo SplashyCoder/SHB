@@ -47,6 +47,8 @@ header{
     /* background-color: #36313AB8; */
     /* background-color: #000; */
     background-color: #b3b0b0;
+    height: fit-content;
+    /* overflow: f; */
 }
 
 .presentationBackground>img{
@@ -55,38 +57,36 @@ header{
 }
 .presentationHoverGround{
     position: absolute;
-    position: absolute;
-    top: 25%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
+    justify-items: center;
+    /* align-items: center; */
+    text-align: center;
+    grid-gap: 25px;
 }
 
-/* .presentationLogoCont{
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.presentationLogoCont>img{
-    /* width: px; */
-    
-
-
-
-/* .presentationPhraseCont{
-    position: absolute;
-    top: 1%;
-    left: 50%;
-    font-size: 18px;
-}
 .presentationButtonCont{
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    font-size: 18px;
-}  */
+    position: relative;
+    display: grid;
+    height: 30px;
+    width: 50%;
+    /* right: 50%; */
+    border-radius: 5px;
+    background-color: #61CE70;
+    align-content: center;
+    justify-content: center;
+}
+
+.presentationButton{
+    border-radius: 5px;
+    background-color: #61CE70;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
 
 
 
