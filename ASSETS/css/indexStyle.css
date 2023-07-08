@@ -116,7 +116,35 @@ header{
 
 }
 
+.solucionesContainer{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+.solucionesTitle{
+    display: grid;
+    justify-content: center;
+    background-color: #fff;
 
+}
+.solucionesTitle>h1{
+    margin: 0;
+}
+
+.solCont{
+    margin: 5px;
+    background-color: var(--principalGreen);
+    width: 50%;
+}
+
+.solLeftLogo{
+    border: #fff 1px solid;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
 
 
 
@@ -235,25 +263,3 @@ header{
     font-size: 25px;
 }
 
-
-
-.solucionesContainer{
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-}
-.solucionesTitle{
-    display: grid;
-    justify-content: center;
-    background-color: #fff;
-
-}
-.solucionesTitle>h1{
-    margin: 0;
-}
-
-.solCont{
-    margin: 5px;
-    background-color: var(--principalGreen);
-    width: 50%;
-}
