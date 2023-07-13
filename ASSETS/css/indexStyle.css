@@ -71,10 +71,15 @@ header{
     background-color: #31303017; 
     opacity: 1; 
 } */
-
+.presentationBackground{
+    width: 100%;
+    height: 100%;
+}
 .presentationBackground>img{
     width: 100%;
+    height: 100%;
     filter: opacity(45%); 
+    object-fit: cover;
 }
 .presentationHoverGround{
     position: absolute;
@@ -370,6 +375,13 @@ footer{
     justify-content: center;
 }
 
+.botFooterRights>p>a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+
 
 @font-face {
     font-family: 'fontello';
@@ -489,3 +501,11 @@ footer{
     font-size: 25px;
 }
 
+
+
+
+@media screen and (max-width: 800px) {
+    /* .presentationBackground>img{
+        object-fit: fill;
+    } */
+}
