@@ -17,9 +17,11 @@ body{
 
 header{
     background-color: #fff;
-    padding: 5px;
+    padding: 25px;
     height: 100px;
     text-decoration: none;
+    padding-top: 5px;
+    padding-bottom:5px;
 }
 .headerPrincipal{
     display: flex;
@@ -288,12 +290,16 @@ footer{
 
 .topFooterContainer{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
 
 }
 .topFooterContainer>div{
     margin: 30px;
     
+}
+
+.titleFooter{
+    margin: 0;
 }
 
 .footerIcon{
@@ -315,9 +321,24 @@ footer{
     
 }
 
+.topFooterMeetUs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.topFooterMeetUs>a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
 .topFooterContact>div{
     display: flex;
     margin: 20px;
+    margin-left: 0;
 }
 
 .topFooterContact>div>p{
