@@ -118,8 +118,12 @@ header{
 
 .solucionesContainer{
     background-color: #fff;
+    color: #fff;
     display: flex;
     flex-direction: row;
+    padding-bottom: 50px;
+    /* height: 550px;
+    width: 307px; */
 }
 .solucionesTitle{
     display: grid;
@@ -137,16 +141,175 @@ header{
     width: 50%;
 }
 
+.solSup{
+    display: flex;
+    
+}
+.solIcont{
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; */
+    padding: 15px;
+    width: fit-content;
+
+}
+
 .solLeftLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     border: #fff 1px solid;
     color: #fff;
+    width: 100px;
+    height: 100px;
+    line-height: 55px;
+    text-align: center;
     border-radius: 50%;
+    font-size: 60px;
+}
+
+.solRightTitle{
+    font-size: 30px;
+    width: fit-content;
+}
+
+.solMid{
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.solDesc{
+    font-size: 20px;
+    grid-column: 2/3;
+}
+.serviceBtnContainer{
+    display: grid;
+    align-content: end;
+    
+}
+
+.siveceBtn{
+    border: #fff 1px solid;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.advantagesContainer{
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #fff;
+}
+
+.advantagesLeftCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.advantagesRightCont{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 30px;
+
+}
+
+.advLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* border: #fff 1px solid; */
+    color: var(--principalGreen);
+    width: 100px;
+    height: 100px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 60px;
+}
+
+.advantagesRightCont>div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: start;
+    height: fit-content;
+}
+
+.advImg{
+    grid-column: 1/2;
+    grid-row: 1/3;
     width: 50px;
     height: 50px;
-    font-size: 30px;
+    margin: 0;
+}
+.advantagesRightTitle{
+    margin: 0;
+    height: fit-content;
+}
+
+.AdvantagesRightDesc{
+    margin: 0;
+    height: fit-content;
+
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    /* text-decoration: none; */
+    padding-bottom: 20px;
+}
+
+.topFooterContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.topFooterContainer>div{
+    margin: 30px;
+    
+}
+
+.footerIcon{
+    color: var(--principalGreen);
 }
 
 
+.topFooterServices{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.topFooterServices>a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.topFooterContact>div{
+    display: flex;
+    margin: 20px;
+}
+
+.topFooterContact>div>p{
+    margin:0;
+}
+
+.botFooterContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 @font-face {
@@ -176,7 +339,9 @@ header{
     font-weight: normal;
     speak: never;
   
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: inherit;
     width: 1em;
     margin-right: .2em;
@@ -227,7 +392,9 @@ header{
     right: 20px;
 }
 .redes a, .btn-mas label{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     background: var(--principalGreen);
     color: #fff;
