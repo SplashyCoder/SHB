@@ -231,10 +231,12 @@ header{
     background-color: #fff;
     padding-bottom: 100px;
     padding-right: 70px;
+    height: fit-content;
 
 }
 
 .advantagesLeftCont{
+    grid-column: 1/2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,8 +254,18 @@ header{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     column-gap: 30px;
-
+    height: fit-content;
+    width: fit-content;
 }
+
+.advantagesRightCont>div{
+    display: grid;
+    grid-template-columns: fit-content repeat(2,1fr);
+    grid-template-rows: fit-content repeat(2,1fr);
+    height: fit-content;
+    width: fit-content;
+}
+
 
 .advLogo{
     display: flex;
@@ -262,44 +274,56 @@ header{
     text-decoration: none;
     /* border: #fff 1px solid; */
     color: var(--principalGreen);
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     line-height: 55px;
     text-align: center;
     border-radius: 50%;
-    font-size: 50px;
+    font-size: 40px;
 }
 
-.advantagesRightCont>div{
+/* .advantagesRightCont>div{
     display: grid;
     grid-template-columns: fit-content repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
     justify-items: start;
-    /* height: fit-content; */
-}
+    height: fit-content;
+} */
 
-.advImg{
+.advImgCont{
     grid-column: 1/2;
-    grid-row: 1/3;
+    display: grid;
+    align-items: start;
+    justify-items: start;
+    margin-right: 10px;
+
+}
+.advImgCont>img{
     width: 50px;
     height: 50px;
-    margin-right: 10px;
 }
-.advantagesRightTitle{
+.advRghtTitle{
     grid-column: 2/3;
     grid-row: 1/2;
     margin: 0;
     height: fit-content;
 }
 
-.AdvantagesRightDesc{
+.adiRghtDesc>p{
+    margin: 0;
+}
+
+.advRghtTitle>h2{
+    margin: 0;
+
+}
+
+.adiRghtDesc{
     grid-column: 2/3;
     grid-row: 2/3;
     margin: 0;
     height: fit-content;
-
 }
-
 
 
 footer{
@@ -555,23 +579,32 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
         column-gap: 30px;
-    
+        width: fit-content;
+        padding: 15px;
     }
     .advantagesRightCont>div{
         display: grid;
         grid-template-columns: fit-content repeat(2,1fr);
         grid-template-rows: repeat(2,1fr);
-        justify-items: center;
+        justify-items: start;
         /* height: fit-content; */
     }
 
-    .advImg{
-        margin-right: 10px;
+    .advImgCont{
+        grid-column: 1/2;
+        display: grid;
         align-items: start;
-        width: 100px;
-
-    }
+        justify-items: start;
+        margin-right: 10px;
     
+    }
+    .advImgCont>img{
+        width: 50px;
+        height: 50px;
+    }
 
+
+
+    
 
 }
