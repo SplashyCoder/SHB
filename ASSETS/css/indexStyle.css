@@ -3,34 +3,81 @@
     --principalGreen: #007335;
     font-family: 'Ysabeau Infant', sans-serif;
 
-
 }
 
 
 body{
-
-    background-color: #b3b0b0;
+    background-color: #fff;
     /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23011604' fill-opacity='1' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
     padding: 0;
     margin: 0;
 }
 
-header{
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
     background-color: #fff;
-    padding: 25px;
-    height: 100px;
+}
+
+.meunButton>img{
+    width: 25px;
+    height: 25px;
+}
+.logo {
+    max-width: 5rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
     text-decoration: none;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+.imgRespon{
+    display: none;
+}
+
+/* 
+header{
+    top: 0.1px;
+    position: sticky;
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
     padding-top: 5px;
     padding-bottom:5px;
+    z-index: 10000;
+
 }
+
 .headerPrincipal{
     display: flex;
     flex-direction: row;  
+    padding:0 25px 0 25px;
+}
+
+.imgRespon{
+    display: none;
 }
 
 .headerRight{
-    position: relative;
-    width: 100%;
+    width: 75%;
+}
+
+.headerRight>button{
+    display: none;
 }
 .headRightMenuCont{
     position: relative;
@@ -44,14 +91,12 @@ header{
     flex-direction: row;
     gap: 12px;
     justify-content: flex-end;
-    /* width: 50%; */
     left: 20px;
-    /* text-decoration: none; */
 }
 .headRightMenuOpc{
     color: #000;
     text-decoration: none;
-}
+} */
 
 .presentationContainer{
     position: relative;
@@ -60,17 +105,7 @@ header{
     height: 700px;
     overflow: hidden;
 }
-/* .presentationContainer::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #31303017; 
-    opacity: 1; 
-} */
+
 .presentationBackground{
     width: 100%;
     height: 100%;
@@ -526,9 +561,68 @@ footer{
 
 
 @media screen and (max-width: 900px) {
-    /* .presentationBackground>img{
-        object-fit: fill;
-    } */
+
+    
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        z-index: 1000000;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+
+    .imgPc{
+        display: none;
+    }
+
+    .imgRespon{
+        display: block;
+        width: 90px;
+    }
+
+
+
+    
     .solucionesContainer{
         flex-direction: column;
     }
@@ -604,7 +698,33 @@ footer{
     }
 
 
-
+    .topFooterContainer{
+        display: grid;
+        grid-template-columns: 0;
+        grid-template-rows:  repeat(4,1fr);
+        /* align-items: center;
+        justify-items: center; */
+        /* gap: 0; */
+        height: fit-content;
+        width: fit-content;
+    }
     
+    .topFooterContainer>div{
+        height: fit-content;
+        width: 100%;
+    }
+    .topFooterLogo{
+        height: fit-content;
+        width: fit-content;
+    }
+    .topFooterLogo>img{
+        height: 250;
+        width: 250;
+        object-fit: cover;
+        
+    }
+
+
+
 
 }

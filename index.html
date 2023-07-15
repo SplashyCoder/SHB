@@ -13,13 +13,16 @@
 </head>
 <body>
     <header class="header">
-        <section class="headerPrincipal">
+        <!-- <section class="headerPrincipal">
             <div class="headerLeft">
                 <div class="headLeftImgCont">
-                    <img class="headLeftImg" src="./ASSETS/MEDIA/cropped-shb2-copia-300x100.png" alt="Soluciones Horizontales Bolivar logo con texto">
+                    <img class="headLeftImg imgPc" src="./ASSETS/MEDIA/cropped-shb2-copia-300x100.png" alt="Soluciones Horizontales Bolivar logo con texto">
+                    <img class="headLeftImg imgRespon" src="./ASSETS/MEDIA/oie_Vy5CWco9cw0B.png" alt="Soluciones Horizontales Bolivar logo con texto">
                 </div>
             </div>
             <div class="headerRight">
+                <button class="burgerBtnOpen">open</button>
+                <button class="burgerBtnClose">open</button>
                 <nav class="headRightMenuCont">
                     <ul class="headRightMenu">
                         <li class="menuItem1"><a class="headRightMenuOpc" href="">INICIO</a></li>
@@ -29,8 +32,22 @@
                     </ul>
                 </nav>
             </div>
-        </section>
+        </section> -->
+        <img class="headLeftImg imgPc" src="./ASSETS/MEDIA/cropped-shb2-copia-300x100.png" alt="Soluciones Horizontales Bolivar logo con texto">
+        <img class="headLeftImg imgRespon" src="./ASSETS/MEDIA/oie_Vy5CWco9cw0B.png" alt="Soluciones Horizontales Bolivar logo con texto">
+        <button id="abrir" class="abrir-menu meunButton"><img src="./ASSETS/SVG/open-menu-6208.svg" alt="menu icon"></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu meunButton" id="cerrar"><img src="./ASSETS/SVG/close-x-10324.svg" alt=" close menu icon"></button>
+            <ul class="nav-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Qué hacemos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
+    <script src="./indexScript.js"></script>
     <section class="presentationContainer">
         <div class="presentationBackground">
             <img src="./ASSETS/MEDIA/e84020c3-real-estate-.jpg" alt=" buildings picture background">   
