@@ -425,14 +425,16 @@ footer{
     margin:0;
 }
 
+.botFooterRights{
+    text-align: center;
+}
+
 .botFooterContainer{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.botFooterRights{
-    text-align: center;
-}
+
 .botFooterRights>p>a{
     text-decoration: none;
     color: #fff;
