@@ -4,6 +4,7 @@ const cerrar = document.querySelector("#cerrar");
 
 abrir.addEventListener("click", () => {
     nav.classList.add("visible");
+    document.body.style.overflow = 'hidden';
 })
 
 cerrar.addEventListener("click", () => {
