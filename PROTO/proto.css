@@ -285,4 +285,40 @@ footer{
         display: block;
         width: 90px;
     }
+
+
+    .topFooterContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: fit-content repeat(4,1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 0;
+        /* height: fit-content; */
+        /* width: 100%; */
+    }
+    
+    .topFooterContainer>div{
+        display: grid;
+        justify-items: center;
+        height: fit-content;
+        width: 100%;
+    }
+    .topFooterLogo{
+
+        height: fit-content;
+        width: 100%;
+    }
+    .topFooterLogo>img{
+        /* height: 250px; */
+        width: 250px;
+        object-fit: cover;
+        
+    }
+
+    .botFooterRights{
+        padding: 10px;
+        text-align: center;
+    }
+
 }
