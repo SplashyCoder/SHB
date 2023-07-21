@@ -58,7 +58,7 @@ header {
 
 
 .presentationContainer{
-    background-image: url(../MEDIA/real-estate-.jpg);
+    background-image: url(./ASSETS/MEDIA/real-estate-.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -201,6 +201,12 @@ header {
     border-radius: 50%;
     font-size: 60px;
 }
+
+.solLeftLogo>img{
+    width: 50px;
+    height: 50px;
+}
+    
 .solRightTitleCont{
     grid-column:2/4 ;
     grid-row: 1/2;
@@ -388,6 +394,10 @@ footer{
     color: var(--principalGreen);
 }
 
+.footerIcon>img{
+    width: 25px;
+    height: 25px;
+}
 
 .topFooterServices{
     display: flex;
@@ -424,7 +434,8 @@ footer{
 }
 
 .topFooterContact>div>p{
-    margin:0;
+    margin:0 0 0 10px ;
+
 }
 
 .botFooterRights{
@@ -443,135 +454,6 @@ footer{
     
 }
 
-
-/* CONTACT PAGE STARTS HERE*/
-
-.formContainer{
-    background-image: url(../MEDIA/real-estate-.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    grid-template-columns: repeat(2,1fr);
-    position: absolute;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    /* align-items: center; */
-    /* text-align: center; */
-    grid-gap: 25px;
-    width: 100%;
-}
-    
-
-
-.formContleftCont{
-    grid-column: 1/2;
-    display: grid;
-    grid-template-rows: fit-content  repeat(4,1fr);
-    grid-template-columns: 1fr;
-    width: 100%;
-    justify-items: end;
-}   
-
-.formContleftCont>div{
-    width: 300px;
-    justify-content: start;
-    height: fit-content;
-}
-
-.lstContTitleCont title{
-    grid-row: 1/2 ;
-}
-
-.fromContLefTitle{
-    width: 300px;
-    justify-content: start;
-    height: fit-content;
-    font-size: 60px;
-}
-
-.rightCont{
-    grid-column: 2/3;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(7,1fr) ;
-    
-    
-}
-
-
-
-/* CONTACT PAGE STOPS HERE */
-
-@font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.eot?75980723');
-    src: url('../font/fontello.eot?75980723#iefix') format('embedded-opentype'),
-         url('../font/fontello.woff2?75980723') format('woff2'),
-         url('../font/fontello.woff?75980723') format('woff'),
-         url('../font/fontello.ttf?75980723') format('truetype'),
-         url('../font/fontello.svg?75980723#fontello') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-  /*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'fontello';
-      src: url('../font/fontello.svg?75980723#fontello') format('svg');
-    }
-  }
-  */
-  [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    speak: never;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: inherit;
-    width: 1em;
-    margin-right: .2em;
-    text-align: center;
-    /* opacity: .8; */
-  
-    /* For safety - reset parent styles, that can break glyph codes*/
-    font-variant: normal;
-    text-transform: none;
-  
-    /* fix buttons height, for twitter bootstrap */
-    line-height: 1em;
-  
-    /* Animation center compensation - margins should be symmetric */
-    /* remove if not needed */
-    margin-left: .2em;
-  
-    /* you can be more comfortable with increased icons size */
-    /* font-size: 120%; */
-  
-    /* Font smoothing. That was taken from TWBS */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Uncomment for 3D effect */
-    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-  }
-  
-  .icon-chat:before { content: '\e800'; } /* '' */
-  .icon-phone:before { content: '\e801'; } /* '' */
-  .icon-location:before { content: '\e802'; } /* '' */
-  .icon-chart-bar:before { content: '\e803'; } /* '' */
-  .icon-mail-alt:before { content: '\f0e0'; } /* '' */
-  .icon-instagram:before { content: '\f16d'; } /* '' */
-  .icon-building-filled:before { content: '\f1ad'; } /* '' */
-  .icon-chart-line:before { content: '\f201'; } /* '' */
-  .icon-whatsapp:before { content: '\f232'; } /* '' */
-  .icon-facebook-squared:before { content: '\f308'; } /* '' */
-  
 
 
 #btn-mas{
@@ -606,6 +488,17 @@ footer{
     opacity: 0;
     visibility: hidden;
 }
+
+.redes>a>img{
+    height: 25px;
+    width: 25px;
+}
+
+.icon-chat>img{
+    height: 25px;
+    width: 25px;
+}
+
 #btn-mas:checked~ .redes a{
     margin-bottom: 10px;
     opacity: 1;

@@ -80,6 +80,8 @@ header {
     grid-gap: 25px;
 }
 
+
+
 #btn-mas{
     display: none;
 }
@@ -111,6 +113,16 @@ header {
     margin-bottom: -15px;
     opacity: 0;
     visibility: hidden;
+}
+
+.redes>a>img{
+    height: 25px;
+    width: 25px;
+}
+
+.icon-chat>img{
+    height: 25px;
+    width: 25px;
 }
 #btn-mas:checked~ .redes a{
     margin-bottom: 10px;
@@ -153,6 +165,10 @@ footer{
     color: var(--principalGreen);
 }
 
+.footerIcon>img{
+    width: 25px;
+    height: 25px;
+}
 
 .topFooterServices{
     display: flex;
@@ -189,7 +205,7 @@ footer{
 }
 
 .topFooterContact>div>p{
-    margin:0;
+    margin:0 0 0 10px ;
 }
 
 .botFooterRights{
