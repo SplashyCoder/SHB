@@ -57,6 +57,7 @@ header {
 }
 
 
+
 .presentationContainer{
     background-image: url(../ASSETS/MEDIA/real-estate-.jpg);
     background-repeat: no-repeat;
@@ -79,6 +80,63 @@ header {
     text-align: center;
     grid-gap: 25px;
 }
+
+.presentationButton{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    /* right: 50%; */
+    background-color: var(--principalGreen);
+    align-items: center;
+    justify-items: center;
+}
+
+.hoverButton{
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    justify-items: center;
+    border-radius: 5px;
+    padding:0 5px 0  5px;
+
+}
+
+.hoverButton>a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.hoverButton:hover{
+    background-color: #000;
+    transition: background-color .5s;
+}
+
+
+/* .presentationButton{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+
+} */
+
+.arrow{
+    display: grid;
+    justify-items: end;
+    width: 100%;
+
+}
+
+.solucionesTitle{
+    display: grid;
+    justify-content: center;
+    background-color: #fff;
+
+}
+
 
 
 
@@ -207,6 +265,10 @@ footer{
 .topFooterContact>div>p{
     margin:0 0 0 10px ;
 }
+
+
+
+
 
 .botFooterRights{
     text-align: center;
