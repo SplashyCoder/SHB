@@ -199,24 +199,32 @@ header {
 
 
 footer{
+    /* background-color: #000; */
+    background-image: url(../ASSETS/MEDIA/pexels-dante-muñoz-15481505.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     background-color: #000;
-    color: #fff;
     /* text-decoration: none; */
     padding-bottom: 20px;
 }
 
 .topFooterContainer{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-
+    display: flex;
+    /* grid-template-columns: repeat(4,1fr); */
+    /* flex-direction: row; */
+    padding: 50px;
+    gap: 10px;
 }
 .topFooterContainer>div{
-    margin: 30px;
-    
+    width: 50%;
+    margin-top: 30px;
+    font-size: 1.2rem;
 }
 
 .titleFooter{
     margin: 0;
+    color: #fff;
 }
 
 .footerIcon{
@@ -264,16 +272,13 @@ footer{
 
 .topFooterContact>div>p{
     margin:0 0 0 10px ;
+    color: #fff;
 }
-
-
-
-
 
 .botFooterRights{
     text-align: center;
+    color: #fff;
 }
-
 .botFooterContainer{
     display: flex;
     align-items: center;
@@ -331,14 +336,17 @@ footer{
     }
     
     .nav-list {
-        flex-direction: column;
-        align-items: end;
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
     }
-
+    
     .nav-list li a {
-        color: #ecececec;
+        text-decoration: none;
+        color: #1c1c1c;
+        font-weight:600 ;
     }
-
+    
     .imgPc{
         display: none;
     }

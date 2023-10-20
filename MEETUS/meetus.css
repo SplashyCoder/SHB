@@ -45,6 +45,7 @@ header {
 .nav-list li a {
     text-decoration: none;
     color: #1c1c1c;
+    font-weight: 600;
 }
 
 .abrir-menu,
@@ -265,12 +266,15 @@ header {
 
 
 footer{
+    /* background-color: #000; */
+    background-image: url(../ASSETS/MEDIA/pexels-dante-muñoz-15481505.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     background-color: #000;
-    color: #fff;
     /* text-decoration: none; */
     padding-bottom: 20px;
 }
-
 .topFooterContainer{
     display: grid;
     grid-template-columns: repeat(4,1fr);
